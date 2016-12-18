@@ -1,0 +1,19 @@
+Baixe o arquivo sendmail.zip (http://glob.com.au/sendmail/) e atualize no seu diretório na pasta Xampp com as dlls e o arquivo sendmail.exe.
+
+##Configure assim:##
+No arquivo sendmail.ini
+
+[sendmail]
+smtp_server=smtp.gmail.com
+smtp_port = 587
+default_domain = gmail.com
+
+auth_username=[seuemail]@gmail.com
+auth_password=[suasenha]
+
+## No arquivo php.ini ##
+
+[mail function]
+sendmail_path = "C:xamppsendmailsendmail.exe -t"
+SMTP = smtp.gmail.com
+smtp_port = 587

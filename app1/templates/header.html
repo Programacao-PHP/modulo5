@@ -1,0 +1,55 @@
+<?php
+    // ativa o buffer de saída (buffering)
+    ob_start(); 
+?>
+<!doctype html>
+<html lang="pt-pt">
+    <head>
+    <meta charset="utf-8">
+    <title>
+        <?php // Imprime o título na página.
+	       if (defined('TITLE')) { // verifica se foi definido um titulo para a página
+		      echo TITLE;
+	       } else { // Define um título fixo
+		      echo 'Bem-vindo ao Clube ESEN';
+	       }
+	   ?>
+    </title>
+    <link rel="stylesheet" href="css/estilos.css" type="text/css" media="screen,projection" />
+</head>
+
+<body>
+    <div id="container">
+
+		<!-- header: definição do menu <div id="header"> -->
+        <header>
+            <p class="description">Clube ESEN, Alunos e Professores</p>
+            <h1><a href="index.php">Livraria da ESEN</a></h1>
+            <ul id="nav">
+                <li><a href="books.php">Livros</a></li>
+                <li><a href="#">Temas</a></li>
+                <li><a href="contacto.php">Contactos</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="register.php">Registo</a></li>
+            </ul>
+        </header>
+
+		<!-- sidebar: definição do sidebar -->
+        <div id="sidebar">
+            <h2>Notícias</h2>
+            <p class="news">Banco CTT já tem registo especial do Banco de Portugal.<br />- <em>Cátia Simões</em></p>
+            <p class="news">Sampaio da Nóvoa não recua. Vai a votos "em nome da cidadania".<br />- <em>Diário Económico</em></p>
+            <p>
+                <?php // Imprime a data e hora corrente...
+			         // Define o timezone
+			         date_default_timezone_set('Europe/Lisbon');
+
+			         // Imprime a data e hora
+			         print date('g:i a l F j');
+			     ?>
+            </p>
+        </div><!-- sidebar -->
+
+		<!-- content: definição da zona de conteúdo -->
+        <div id="content">
+ 

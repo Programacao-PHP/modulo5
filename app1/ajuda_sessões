@@ -1,0 +1,15 @@
+NOTAS
+
+session_start - inicializa a informação relativa à sessão
+session_destroy - destrói toda a informação relativa à sessão
+session_name - lê ou escreve o nome da atual sessão
+session_module_name - lê ou escreve o módulo da atual sessão
+session_save_path - lê ou escreve a path da atual sessão
+session_id - lê ou escreve o identificador único da atual sessão
+session_register - regista uma ou mais variáveis com a atual sessão
+session_unregister - liberta uma variável da atual sessão
+session_is_registered - tenta verificar se uma determinada variável está ou não associada a uma sessão
+session_decode - descodifica informação de uma sessão a partir de um texto
+session_encode - codifica a informação atual da sessão num texto
+session_write_close - escreve os dados na sessão e termina a sessão.
+

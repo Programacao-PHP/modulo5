@@ -1,0 +1,18 @@
+
+        </div><!-- content :: header.html -->
+
+        <footer>
+            <p>Design  <a href="http://www.esenviseu.net">Programação em PHP</a>.</p>
+            <p>
+                &copy; <?php echo date("Y", time());?>
+            </p>
+        </footer><!-- footer -->
+
+    </div><!-- container -->
+</body>
+</html>
+
+<?php
+    // Envia o conteúdo do buffer para o browser e encerra a operação de buffering
+    ob_end_flush();
+?>
